@@ -2,8 +2,9 @@
     "name": "bitcoin",
     "version": "1.0.0",
     "description": "",
-    "main": "bitcoin-calcurator.js",
+    "main": "bitcoin-monitor.js",
     "scripts": {
+        "start": "node bitcoin-monitor.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
