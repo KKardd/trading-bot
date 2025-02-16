@@ -1,0 +1,4 @@
+node_modules
+credentials.json
+back-testing.js
+bitcoin-calculator.js
