@@ -24,7 +24,7 @@ function filterStochasticRSI(data) {
     const D = latestStochRSI.d; // 주황색 선 (%D)
 
     // 조건: %K가 40 미만이고 %K가 %D 위에 있음
-    if (K < 20 && K > D) {
+    if (K < 30 && K > D) {
         return true;
     } else {
         return false;

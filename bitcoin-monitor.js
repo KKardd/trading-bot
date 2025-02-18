@@ -142,8 +142,8 @@ async function filterMarket(markets) {
         }
 
         // Step 1: 거래대금 조건 필터링
-        if (!filterVolume(tickerData, 3000000000)) {
-            // min Volume = 30억
+        if (!filterVolume(tickerData, 1000000000)) {
+            // min Volume = 10억
             console.log(`${market} Volume ended`);
             continue;
         }
