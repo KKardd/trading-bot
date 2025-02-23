@@ -52,7 +52,7 @@ function filterHeikinAshi(candles) {
     const prevLowerWick = prevCandle.haOpen - prevCandle.haLow;
 
     const isPrevCandleStrong =
-        // prevCandle.haClose > prevCandle.haOpen && // 양봉확인
+        prevCandle.haClose > prevCandle.haOpen && // 양봉확인
         prevBodySize > (prevCandle.haHigh - prevCandle.haLow) * 0.3 && // 몸통이 큼
         prevLowerWick < prevBodySize * 0.3; // 아래꼬리가 짧음
 
