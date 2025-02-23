@@ -161,10 +161,10 @@ async function filterMarket(markets) {
         }
 
         // Step 4: 하이캔 아시 캔들 조건 필터링
-        if (!filterHeikinAshi(candleData)) {
-            console.log(`${market} HeikinAshi ended`);
-            continue;
-        }
+        // if (!filterHeikinAshi(candleData)) {
+        //     console.log(`${market} HeikinAshi ended`);
+        //     continue;
+        // }
         console.log("매수 성공: ", market);
         return market;
     }
